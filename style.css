@@ -1,0 +1,27 @@
+.container.demo {
+    background: #005544;
+    height: 30vh;
+    color: white;
+}
+/*注意.row前面的空格
+这样才能正确指向row元素*/
+.container.demo .row{
+    background: #021d51;
+    border-bottom: 1px solid #000;/*solid 表示实线*/
+
+}
+.container.demo .row > div > span{
+    display: block;
+    background: #487bdd;
+    color:white;
+    font-size:32px;
+    padding: 8px;
+    border: 1px solid #021d51;
+}
+.container.demo .row.juzhong{
+    height: 30vh;
+    background:#000;
+}
+.component.demo{
+    padding: 50px;
+}

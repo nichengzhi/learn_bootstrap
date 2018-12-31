@@ -1,0 +1,149 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Learn Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/popper.js" charset="utf-8"></script>
+    <!--the js file for bootstrap need jquery and popper-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="./script.js" charset="utf-8"></script>
+</head>
+<body>
+    <!--Rows must be placed within a .container-->
+    
+    <div class="container first">
+        <!--it will set this element with constant width and this width will change in different devices-->
+        <h1>hello</h1>
+    </div>
+     <!--bootstrap grid system-->
+     <!--container part-->
+    <!--column have same width-->
+    <div class="container demo">
+        <h1>hello2</h1>
+        <div class="row">
+            <!--it will automatellically assign same width to each column-->
+            <!--the maximum width is 12-->
+            <div class="col"><span>1</span></div>
+            <div class="col"><span>1</span></div>
+            <div class="col"><span>1</span></div>
+        </div>
+        <div class="row">
+                <!--it will automatellically assign same width to each column-->
+                <!--the maximum width is 12-->
+                <div class="col"><span>1</span></div>
+                <div class="col"><span>1</span></div>
+                <div class="col"><span>1</span></div>
+                <!--split one row to two row-->
+                <div class="w-100"></div>
+                <div class="col"><span>2</span></div>
+                <div class="col"><span>2</span></div>
+                <div class="col"><span>2</span></div>
+        </div>
+        <div class="row">
+                <!--it will automatellically assign same width to each column-->
+                <!--the maximum width is 12, in this row, first column have 6 width, other 2 share the another 6-->
+                <div class="col-6"><span>1</span></div>
+                <div class="col"><span>1</span></div>
+                <div class="col"><span>1</span></div>
+        </div>
+        <!--aligment column-->
+        <div class="row juzhong">
+                <!--it will automatellically assign same width to each column-->
+                <!--the maximum width is 12-->
+                <div class="col-4 align-self-start"><span>1</span></div>
+                <div class="col-4 align-self-center"><span>1</span></div>
+                <div class="col-4 align-self-end"><span>1</span></div>
+        </div>
+        <!--aligment all column-->
+        <div class="row justify-content-center">
+                <div class="col-4"><span>1</span></div>
+                <div class="col-4"><span>1</span></div>
+        </div>
+        <div class="row justify-content-between">
+                <div class="col-4"><span>1</span></div>
+                <div class="col-4"><span>1</span></div>
+        </div>
+        <div class="row justify-content-around">
+                <div class="col-4"><span>1</span></div>
+                <div class="col-4"><span>1</span></div>
+        </div>
+        <div class="row juzhong justify-content-center align-items-center">
+                <!--it will automatellically assign same width to each column-->
+                <!--the maximum width is 12-->
+                <div class="col-4"><span>1</span></div>
+                <div class="col-4"><span>1</span></div>
+                <div class="col-4"><span>1</span></div>
+        </div>
+        <!--order columns-->
+        <div class="row">
+                <div class="col order-3"><span>1</span></div>
+                <div class="col order-2"><span>2</span></div>
+                <div class="col order-1"><span>3</span></div>
+        </div>
+        <!--ofset space-->
+        <div class="row">
+    
+                <div class="col offset-2"><span>1</span></div>
+                <div class="col offset-1"><span>2</span></div>
+                
+        </div>
+        <!--change column size when web page size change-->
+        <div class="row">
+                <!--it will automatellically assign same width to each column-->
+                <!--the maximum width is 12-->
+                <div class="col-sm-6 col-lg-3"><span>1</span></div>
+                <div class="col-sm-6 col-lg-3"><span>1</span></div>
+                <div class="col-sm-6 col-lg-3"><span>1</span></div>
+                <div class="col-sm-6 col-lg-3"><span>1</span></div>
+                <!--when device size is small, each column will get 6 width, when size is large, each column get 3 width-->
+        </div>
+        <!--component part-->
+        <div class="component demo">
+                <!--alert part-->
+                <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                        hello <a href="#" class="alert-link">see more</a>
+                        <!--alert link will make color fit the tag background-->
+                        <button class="close" data-dismiss="alert">
+                                &times;<!--&times means a multiplication sign. -->
+                        </button>
+                </div>
+        </div>
+        <button class="btn btn-danger close-alert">Close</button>
+        <!--badge biaoqian-->
+        <div class="component demo">
+                <button class="btn btn-light"> 
+                  <span class="badge badge-primary badge-pill">new</span>
+                  <!--badge-primary is a type of badge, you can try others badge-pill make circle-->
+                </button>
+               
+
+        </div>
+        <!--breadcrumb daohangrujing-->
+        <div class="component demo">
+                
+                <nav class="breadcrumb">
+                        <a class="breadcrumb-item" href="#">main</a>
+                        <a class="breadcrumb-item" href="#">lesson</a>
+                        <span class="breadcrumb-item active">bootstrap</span>
+                </nav>
+                
+        </div>
+        <div class="component demo">
+                <button class="btn btn-outline-danger btn-lg btn-block" disabled>
+                        Button
+                        <!--btn-outline-danger: button have outline, danger is the button type
+                        btn-lg set button size btn-block set button size fit component size-->
+                </button>
+        </div>
+       
+        
+    
+   
+    
+</body>
+</html>
